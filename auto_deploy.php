@@ -5,7 +5,7 @@ declare(strict_types=1);
  * GitHub webhook auto-deploy for Home JOB (plain PHP, no Laravel).
  * Configure webhook URL to this file and set the same secret in GitHub.
  */
-$secret = 'cb77849da7fc12bf70dd4a9b13d57aa96e6e595996e181735fe9e450f686aae3';
+$secret = 'add your key here';
 
 $signature = $_SERVER['HTTP_X_HUB_SIGNATURE_256'] ?? ($_SERVER['HTTP_X_HUB_SIGNATURE'] ?? '');
 $payload = file_get_contents('php://input');
